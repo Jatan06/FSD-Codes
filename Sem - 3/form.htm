@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Form</title>
+    </head>
+    <body>
+        <form action="submit.html" method="get" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Infromation</legend>
+                <label for="uname">Username</label>
+                <input type="text" id="uname" name="username" autofocus autocomplete="on" maxlength="20" placeholder="Username">
+                <br>
+                <br>
+                <label>Email</label>
+                <input type="email" id="email" name="email" required placeholder="Email" maxlength="30">
+                <br>
+                <br>
+                <label>Password</label>
+                <input type="password" id="pwd" name="password" required minlength="8" maxlength="12" placeholder="Password" maxlength="20">
+                <br>
+                <br>
+                <label>Phone No</label>
+                <input type="tel" id="phone" name="phone" required minlength="10" maxlength="10" placeholder="9987554433">
+                <br>
+                <br>
+                <label for="gender">Gender</label>
+                <input type="radio" name="gender" value="male" checked>Male 
+                <input  type="radio" name="gender" value="female">Female
+                <br>
+                <br>
+                <label for="hobby">Hobby</label>
+                <input type="checkbox" name="hobby" value="music">Music 
+                <input type="checkbox" name="hobby" value="drawing">Drawing
+                <br>
+                <br>
+                <label for="msg">Comments</label>
+                &ThickSpace;&ThickSpace;
+                <textarea name="msg" rows="10" cols="20" placeholder="Type your comment" required></textarea>
+                <br>
+                <br>
+            </fieldset>
+            <br>
+            <br>
+            <fieldset>
+                <legend>Additional Information</legend>
+                <label for="dob">Date of Birth</label>
+                &ThickSpace;
+                <input type="date" name="dob" required>
+                <br>
+                <br>
+                <label for="age">age</label>
+                <input type="number" name="age" min="18" max="35" value="20" step="1">
+                <br>
+                <br>
+                <label for="price">Price</label>
+                <input type="range" name="price" min="100" max="1000" step="50" value="200">
+                <br>
+                <br>
+                <label for="color">Color</label>
+                <input type="color" name="color" value="#">
+                <br>
+                <br>
+                <label>Select City</label>
+                <select name="city">
+                    <option value=" ">Select</option>
+                    <option value="ahmedabad">Ahmedabad</option>
+                    <option value="baroda">Baroda</option>
+                    <option value="Rajkot">Rajkot</option>
+                </select>
+                <br>
+                <br>
+                <label for="branch">Branch</label>
+                <select name="branch" required>
+                    <option value="select" selected disabled>Select</option>
+                        <optgroup label="Computer">
+                            <option value="CSE">CSE</option>
+                            <option value="IT">IT</option>
+                        </optgroup>
+                        <optgroup label="Other">
+                            <option value="EC">EC</option>
+                            <option value="Civil">Civil</option>
+                        </optgroup>
+                </select>
+                <br>
+                <br>
+                <label for="browser">Select Browser</label>
+                <input list="browsers" name="browser">
+                <datalist id="browsers">
+                    <option value="chrome"></option>
+                    <option value="safari"></option>
+                    <option value="edge"></option>
+                    <option value="Firefox"></option>
+                    <option value="Comet"></option>
+                </datalist>
+                <br>
+                <br>
+                <input type="file" name="pic" accept=".jpg, .jpeg, .png, .gif" multiple/>
+                <br>
+                <br>
+                <input type="submit" value="Upload">
+            </fieldset>
+            <br>
+            <br>
+            <fieldset>
+                <legend>Submit form</legend>
+                <input type="reset" value="Reset form">
+                <!-- <input type="button" value="Submit Button"> -->
+                <button type="submit">Submit</button>
+                <!-- <button>Button</button> -->
+            </fieldset>
+            <br>
+            <br>
+            <fieldset>
+                <legend>Hidden Randomly Disabled</legend>
+                <input type="hidden" name="uid" value="1234">
+                <input type="text" value="CSE" readonly>
+                <input type="text" name="Promo" value="LJU500" disabled>
+            </fieldset>
+        </form>
+    </body>
+</html>
