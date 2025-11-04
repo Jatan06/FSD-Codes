@@ -1,0 +1,48 @@
+.underline{
+    text-decoration: underline;
+    color: purple;
+    text-align: left;
+    text-transform: capitalize;
+    text-indent: 60px;
+    letter-spacing: 5px;
+    word-spacing: 6px;
+    text-shadow: 3px 0px 4px red;
+    line-height: 1.5;
+    font-size: 15px;
+}
+.overline{
+    text-decoration: overline;
+    color: greenyellow;
+    text-align: center;
+    text-transform: capitalize;
+    text-indent: 60px;
+    letter-spacing: 5px;
+    word-spacing: 6px;
+    text-shadow: 3px 0px 4px yellow;
+    line-height: 1.5;
+    font-size: 15px;
+}
+.linethrough{
+    text-decoration: underline;
+    color: purple;
+    text-align: left;
+    text-transform: capitalize;
+    text-indent: 60px;
+    letter-spacing: 5px;
+    word-spacing: 6px;
+    text-shadow: 3px 0px 4px red;
+    line-height: 1.5;
+    font-size: 15px;
+}
+.combined{
+    text-decoration: underline;
+    color: purple;
+    text-align: left;
+    text-transform: capitalize;
+    text-indent: 60px;
+    letter-spacing: 5px;
+    word-spacing: 6px;
+    text-shadow: 3px 0px 4px red;
+    line-height: 1.5;
+    font-size: 15px;
+}
