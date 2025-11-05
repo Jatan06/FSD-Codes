@@ -56,7 +56,7 @@ ul li::marker{
     gap: 10px;
     justify-content:space-around;
     align-items:center;
-    flex-wrap:wrap-reverse;
+    flex-wrap:wrap;
 }
 .box{
     background-color: antiquewhite;
