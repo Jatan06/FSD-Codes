@@ -24,24 +24,63 @@
         #box1{
             background-color: red;
             top: 100px;
-            right: 100px;
+            left: 50px;
+            position: relative;
+            border-radius: 30px;
+            z-index: 1;
         }
         #box2{
             background-color: yellow;
             position: relative;
             top: 100px;
             left: 50px;
+            border-radius: 30px;
         }
-    </style>
+        #box3{
+            position: absolute;
+            top:50px;
+            right:0;
+            background-color: green;
+        }
+        #box4{
+            position: fixed;
+            bottom: 100px;
+            right: 50px;
+            background-color:lightblue;
+        }
+        #box5{
+            position: sticky;
+            top: 250px;
+            background-color: gray;
+            border-radius: 30px;
+        }
+        #box6{
+            position: sticky;
+            top:600px;
+            background-color: coral;
+            z-index: 2;
+            border-radius: 50px;
+        }
+        #box7{
+            position: sticky;
+            top:500px;
+            background-color: purple;
+            z-index: 10;
+            border-radius: 50px;
+        }
+        </style>
     <body>
         <div class="container">
-            <div class="box" id="box1">1</div>
-            <div class="box" id="box2">2</div>
-            <div class="box" id="box3">3</div>
-            <div class="box" id="box4">4</div>
-            <div class="box" id="box5">5</div>
+            <div class="box" id="box1">Box 1</div>
+            <div class="box" id="box2">Box 2</div>
+            <div class="box" id="box3">Box 3</div>
+            <div class="box" id="box4">Box 4</div>
+            <div class="box" id="box5">Box 5</div>
         </div>
-        <div class="container1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam quod obcaecati eum explicabo officia magnam assumenda id cum recusandae placeat, cumque cupiditate numquam soluta, eius dolor maxime labore eos debitis!</div>
+        <div class="container1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam quod obcaecati eum explicabo officia magnam assumenda id cum recusandae placeat, cumque cupiditate numquam soluta, eius dolor maxime labore eos debitis!
+            <div class="box" id="box6">Box 6</div>
+            <div class="box" id="box7">Box 7</div>
+        </div>
         
     </body>
 </html>
