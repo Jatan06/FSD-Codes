@@ -1,0 +1,47 @@
+.d1{
+    margin: 100px auto;
+    width: 200px;
+    height: 150px;
+    border-radius: 120px;
+    font-size: 30px;
+    background-image: linear-gradient(orange, orange);
+    border: 2px solid;
+    text-align: center;
+    padding: 20px;
+    /* transition-property: transform, background-color;
+    transition-duration: 2s,2.8s;
+    transition-timing-function:ease-in-out; */
+    transition-delay: 2s;
+    transition: background-color 2s ease-in-out 2s, transform 2.8s ease-in-out 2s, box-shadow 4s ease-in-out 2s,background-image 3s ease-in-out 2s;
+}
+.a3,.a4{
+    height: 200px;
+    width: 200px;
+    display: block;
+    padding: 20px;
+    border:3px solid;
+    margin: 50px auto;
+    transform: skew(-20deg,20deg);
+}
+.d1:hover{
+    transform: scale(-1.5,1.2) rotate(180deg);
+    background-image: linear-gradient(to bottom, #ff7e5f, #feb47b);
+    /* background: linear-gradient(142deg, rgb(215, 0, 39), rgb(115, 0, 165)); */
+    padding: 20px;
+    /* transform: rotate(210deg); */
+    /* rotate: 120deg; */
+    border-radius: 100px;
+    border: 8px;
+    border-style:groove;
+    text-align: center;
+    box-shadow: 10px -5px 20px black;
+}
+.a3:hover{
+    transform: skew(20deg,20deg);
+}
+.a4:hover{
+    /* transform: scale(0.5,0.7); */
+    transform: scaleX(4);
+    transform: scaleY(5);
+    transform: skewY(4deg);
+}
