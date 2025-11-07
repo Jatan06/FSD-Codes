@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+</head>
+<style>
+    .d1{
+        height: 200px;
+        width: 300px;
+        background-color: blue;
+        border-radius: 50px;
+        margin: 50px auto;
+        animation-name: example;
+        animation-duration: 7s;
+        animation-delay: 100ms;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-timing-function: ease-in-out;
+        position: absolute;
+    }
+    @keyframes example{
+        0% {
+            background-color: blue;
+            top: 10px;
+        }
+        20% {
+            background-color: yellow;
+            border-radius: 70px;
+            top: 200px;
+        }
+        40%{
+            background-color: red;
+            border-radius: 100px;
+        }
+        60%{
+            background-color: purple;
+        }
+        80%{
+            background-color: green;
+        }
+        100%{
+            background-color: orange;
+        }
+    }
+
+</style>
+<body>
+    <div class="d1"></div>
+</body>
+</html>
