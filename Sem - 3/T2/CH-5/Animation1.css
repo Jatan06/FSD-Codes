@@ -1,0 +1,92 @@
+ @keyframes abc{
+    0%{
+      top: 0;
+      left: 0;
+      background-color: blue;
+      border-radius: 12px;
+    }
+    25%{
+      top:0;
+      left:80%;
+      background-color: darkblue;
+      border-radius: 100px;
+    }
+    50%{
+      top:80%;
+      left: 80%;
+      transform: rotate(90deg);
+      border-radius: 50%;
+    }
+    75%{
+      top: 80%;
+      left:0;
+      transform: rotate(-90deg);
+      background-image: url(lamborgini.png);
+      background-size: contain;
+    }
+    85%{
+      top:40%;
+      left:20;
+      background-color: bisque;
+      transform: rotate(90DEG);
+    }
+    100%{
+      top:0;
+      left:20;
+      transform: rotate(90deg);
+      border-radius: 20px;
+    }
+  }
+  @keyframes bcd {
+    0%{
+      top: 30;
+      left:20;
+      background-color: blue;
+      border-radius: 12px;
+      background:linear-gradient(-45deg,lightblue, rgb(159, 116, 233),aqua);
+    }
+    50%{
+      top: 30;
+      left:20;
+      background-color: blue;
+      border-radius: 12px;
+      box-shadow: 15px 15px 30px black;
+      background:linear-gradient(-45deg,aqua, rgb(159, 116, 233),aqua);
+    }
+    100%{
+      top:30;
+      left:20;
+      transform: rotate(360deg);
+      border-radius: 20px;
+      background:linear-gradient(-45deg,lightpink, rgb(159, 116, 233),lightpink);
+    }
+  }
+  .b1{
+    width:100px;
+    height:100px;
+    box-shadow: 10px 10px 20px black;
+    border-radius: 10px;
+    background-color: blue;
+    border: 3px double;
+    animation-name: abc;
+    animation-duration: 10s;
+    animation-delay: 1ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+  }
+  .b2{
+    width: 100px;
+    height: 100px;
+    box-shadow: 10px 10px 20px black;
+    border-radius: 10px;
+    background-color: blue;
+    border: 3px double;
+    animation-name: bcd;
+    animation-duration: 10s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+  }
