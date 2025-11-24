@@ -13,14 +13,28 @@ input[type=email] {
 }
 input[type=button]{
     padding: 20px;
-    background-color: grey;
-    color: white;
+    background-color: white;
+    border-color: blue;
+    color: black;
     font-size: 20px;
+    border-radius: 50%;
+}
+input[type=button]:hover{
+    background-color: white;
+    border-color: blue;
+    color: black;
+    transition: transform 0.4s;
+    transform: scale(1.1);
+    border-radius: 50%;
 }
 a[target=_blank]{
     color: purple;
     text-decoration: none;
     font-size: 25px;
+}
+a:hover {
+    color: green;
+    transform: rotate(30deg) scale(2.3);
 }
 a{
     color: black;

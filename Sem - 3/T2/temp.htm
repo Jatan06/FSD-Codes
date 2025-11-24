@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3-Column Product Grid</title>
+
+  <style>
+    h2{
+      text-align: center;
+      margin-left: 9px;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 50px;
+      padding: 10px;
+    }
+
+    .product-item {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 16px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+
+    .product-item h4 {
+      margin-top: 12px;
+      margin-bottom: 0;
+      font-size: 1.1em;
+      color: #333;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h2>Smartwatch Collection</h2>
+
+  <div class="product-grid">
+
+    <div class="product-item">
+      <img src="image.jpg" alt="Smartwatch 1">
+      <h4>Classic Smartwatch</h4>
+    </div>
+
+    <div class="product-item">
+      <img src="image.jpg" alt="Smartwatch 2">
+      <h4>Sport Edition</h4>
+    </div>
+
+    <div class="product-item">
+      <img src="image.jpg" alt="Smartwatch 3">
+      <h4>Minimalist Watch</h4>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

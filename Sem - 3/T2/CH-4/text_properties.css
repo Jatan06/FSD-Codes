@@ -14,7 +14,7 @@
     text-decoration: overline;
     color: greenyellow;
     text-align: center;
-    text-transform: capitalize;
+    text-transform: uppercase;
     text-indent: 60px;
     letter-spacing: 5px;
     word-spacing: 6px;
@@ -23,10 +23,10 @@
     font-size: 15px;
 }
 .linethrough{
-    text-decoration: underline;
+    text-decoration: line-through;
     color: purple;
     text-align: left;
-    text-transform: capitalize;
+    text-transform: none;
     text-indent: 60px;
     letter-spacing: 5px;
     word-spacing: 6px;
@@ -38,7 +38,7 @@
     text-decoration: underline;
     color: purple;
     text-align: left;
-    text-transform: capitalize;
+    text-transform: lowercase;
     text-indent: 60px;
     letter-spacing: 5px;
     word-spacing: 6px;

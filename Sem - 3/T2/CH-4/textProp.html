@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
     <head>
         <link rel="stylesheet" href="text_properties.css">
@@ -17,4 +17,34 @@
             combined uppercase and after properties of text. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea et eum sunt culpa recusandae inventore corrupti mollitia ducimus ullam officiis voluptatum, in expedita quae nihil distinctio pariatur optio qui at. 
         </p>
     </body>
-</html>
+</html> -->
+
+<head>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background: rgb(142, 7, 233);
+            /* Transition for multiple properties including transform */
+            transition-property: width, height, transform, background-color, border-radius;
+            transition-duration: 3s, 5s, 4s, 6s, 6s;
+            transition-delay: 2s;
+            /* Wait 2s before starting transition */
+            transition-timing-function: ease-in-out;
+            /* Smooth start and end */
+        }
+
+        div:hover {
+            width: 150px;
+            height: 150px;
+            transform: rotate(360deg);
+            background-color: yellow;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    21
+    <div></div>
+</body>

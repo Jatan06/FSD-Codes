@@ -1,92 +1,126 @@
- @keyframes abc{
+  @keyframes abc{
     0%{
-      top: 0;
-      left: 0;
+      top: 20px;
+      left: 21px;
       background-color: blue;
       border-radius: 12px;
     }
     25%{
-      top:0;
-      left:80%;
+      top:20px;
+      left:70%;
       background-color: darkblue;
-      border-radius: 100px;
+      border-radius: 12px;
+      transform: rotate(-90deg);
     }
     50%{
-      top:80%;
-      left: 80%;
+      top:60%;
+      left: 70%;
       transform: rotate(90deg);
-      border-radius: 50%;
+      border-radius: 12px;
     }
     75%{
-      top: 80%;
-      left:0;
+      top: 60%;
+      left:21px;
       transform: rotate(-90deg);
       background-image: url(lamborgini.png);
       background-size: contain;
     }
-    85%{
-      top:40%;
-      left:20;
-      background-color: bisque;
-      transform: rotate(90DEG);
+    86.5%{
+      top:60%;
+      left:21px;
+      /* transform: rotate(90deg); */
     }
     100%{
-      top:0;
-      left:20;
-      transform: rotate(90deg);
+      top:20px;
+      left:21px;
       border-radius: 20px;
+      transform: rotate(90deg);
     }
   }
   @keyframes bcd {
     0%{
-      top: 30;
-      left:20;
+      top: 25px;
+      left:25px;
       background-color: blue;
       border-radius: 12px;
       background:linear-gradient(-45deg,lightblue, rgb(159, 116, 233),aqua);
     }
     50%{
-      top: 30;
-      left:20;
+      top: 25px;
+      left:25px;
       background-color: blue;
       border-radius: 12px;
-      box-shadow: 15px 15px 30px black;
+      /* box-shadow: 15px 15px 30px black; */
       background:linear-gradient(-45deg,aqua, rgb(159, 116, 233),aqua);
     }
     100%{
-      top:30;
-      left:20;
+      top:25px;
+      left:25px;
       transform: rotate(360deg);
       border-radius: 20px;
       background:linear-gradient(-45deg,lightpink, rgb(159, 116, 233),lightpink);
     }
   }
+  @keyframes cont {
+    0% {
+        top: 25px;
+        left: 25px;
+        background-color: blue;
+        border-radius: 12px;
+        background: linear-gradient(-45deg, lightblue, rgb(159, 116, 233), aqua);
+      }
+    
+      50% {
+        top: 25px;
+        left: 25px;
+        background-color: blue;
+        border-radius: 12px;
+        /* box-shadow: 15px 15px 30px black; */
+        background: linear-gradient(-45deg, aqua, rgb(159, 116, 233), aqua);
+      }
+    
+      100% {
+        top: 25px;
+        left: 25px;
+        transform: rotate(360deg);
+        border-radius: 20px;
+        background: linear-gradient(-45deg, lightpink, rgb(159, 116, 233), lightpink);
+      }
+  }
   .b1{
     width:100px;
     height:100px;
-    box-shadow: 10px 10px 20px black;
-    border-radius: 10px;
+    box-shadow: 1px 1px 15px 2px black;    border-radius: 10px;
     background-color: blue;
     border: 3px double;
-    animation-name: abc;
-    animation-duration: 10s;
-    animation-delay: 1ms;
-    animation-timing-function: ease-in;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation: abc 10s 15s infinite alternate ease-in,cont 5s infinite alternate ease-in;
+    /* animation-duration: 10s; */
+    /* animation-delay: 1ms; */
+    /* animation-timing-function: ease-in; */
+    /* animation-iteration-count: 1;
+    animation-direction: alternate; */
     position: absolute;
+
+    /* animation-name: cont;
+    animation-timing-function: ease-in;
+    animation: duration 15s infinite alternate;
+    position: absolute; */
   }
   .b2{
     width: 100px;
     height: 100px;
-    box-shadow: 10px 10px 20px black;
+    box-shadow: 1px 1px 15px 2px black;
     border-radius: 10px;
     background-color: blue;
     border: 3px double;
     animation-name: bcd;
-    animation-duration: 10s;
+    animation-duration: 15s;
+    animation-delay: 10.5s;
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
     position: absolute;
+  }
+  body{
+    background: linear-gradient(to top ,wheat,cyan,darkpurple);
   }
