@@ -1,0 +1,99 @@
+body{
+    height: 1500px;
+    background-color: rgba(0100, 02000, 0100, 1000);
+}
+.box1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 500px;
+    height: 300px;
+    margin: 50px auto;
+    padding: 25px;
+    border: 5px dotted blue;
+    background-image: url(image.jpg);
+    box-shadow:15px 15px 3px red;
+    background-color: lightblue;
+    background-repeat: repeat-x;
+    background-position: top right;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: auto;
+    background-clip: padding-box;
+}
+.box2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 500px;
+    height: 300px;
+    margin: 50px auto;
+    padding: 25px;
+    border: 5px dotted blue;
+    background-image: url(image.jpg);
+    box-shadow:15px 15px 3px red;
+    background-color: lightblue;
+    background-repeat: repeat-x;
+    background-position: top right;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow:auto;
+    background-clip: padding-box;
+}
+.box3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 500px;
+    height: 300px;
+    margin: 50px auto;
+    padding: 25px;
+    border: 5px dotted blue;
+    background-image: url(image.jpg);
+    box-shadow:15px 15px 3px red;
+    background-color: lightblue;
+    background-repeat: repeat-x;
+    background-position: top right;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: auto;
+    background-clip: padding-box;
+}
+/* .box3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 500px;
+    height: 300px;
+    margin: 50px auto;
+    padding: 25px;
+    border: 5px dotted blue;
+    background-image: url(image.jpg);
+    box-shadow:15px 15px 3px red;
+    background-color: lightblue;
+    background-repeat: repeat-x;
+    background-position: top right;
+    background-size: cover;
+    background-attachment: local;
+    overflow:scroll;
+    background-clip: padding-box;
+} */
+a{
+    text-decoration: none;
+    font-size: 30px;
+}
+a:link{
+    color: red;
+}
+a:visited{
+    color: purple;
+}
+a:hover{
+    color: rgb(161, 120, 196);
+}
+a:active{
+    color: orange;
+}
+input:focus{
+    background-color: yellow;
+    color: red;
+}
+ul li:nth-child(3){
+    color: blue;
+    font-size: 20px;
+}
+ul li:not(.special){
+    color: green;
+}

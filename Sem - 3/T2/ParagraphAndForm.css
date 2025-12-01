@@ -1,0 +1,28 @@
+.d3>p{
+    color: blue;font-size: 35;text-align: center;  
+}
+.d1>p{
+    color: antiquewhite;font-size: 20;text-align: center;
+}
+input[type=email] {
+    text-align: center;
+    width: auto;
+    background-color: yellow;
+    color: blue;
+    padding: 20px;
+}
+input[type=button]{
+    padding: 20px;
+    background-color: grey;
+    color: white;
+    font-size: 20px;
+}
+a[target=_blank]{
+    color: purple;
+    text-decoration: none;
+    font-size: 25px;
+}
+a{
+    color: black;
+    text-decoration: dotted;
+}

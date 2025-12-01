@@ -1,0 +1,75 @@
+.p1::first-line{
+    color: blue;
+    font-size: 20px;
+    font-style: italic;
+}
+.p1::first-letter{
+    color: rgb(153, 255, 112);
+    font-size: 30px;
+    font-style: oblique;
+    text-decoration: underline;
+}
+ul li::marker{
+    color: purple;
+    font-size: 14px;
+    content: "#";
+}
+.p1::selection{
+    background-color: aqua;
+    color: red;
+}
+.p1::after{
+    content: "😀";
+}
+/* .p1::before{
+    content: url(animation.gif);
+} */
+.d1 div{
+    display: inline-block;
+    padding: 2px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    margin: 0px;
+    border: 3px solid red;
+    background-color: yellow;
+    color: red;
+    font-size: 18px;
+}
+.d1 div:nth-child(0){
+    display: none;
+}.d2 span{
+    width: 500px;
+    height: 200px;
+    margin: 10px;
+    border: 2px solid blue;
+    border-radius: 30px;
+    padding: 20px;
+    text-align: center;
+}
+.container{
+    height: 500px;
+    display: flex;
+    background-color: gray;
+    padding: 10px;
+    flex-direction:row;
+    gap: 10px;
+    justify-content:space-around;
+    align-items:center;
+    flex-wrap:wrap-reverse;
+}
+.box{
+    background-color: antiquewhite;
+    color: cadetblue;
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    border-radius: 3px;
+}
+/* .box:nth-child(3){
+    order: 1;
+    background-color: yellow;
+    flex: 2 1 100px;
+    flex-grow: 1 1 100px;
+} */

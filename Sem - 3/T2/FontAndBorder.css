@@ -1,0 +1,68 @@
+/* h1{
+  color: purple;
+  font-size: 50px;
+}
+p{
+  color: red;
+}
+#id1{
+  text-decoration: underline;
+  color: yellow;
+  background-color: #000;
+}
+h2{
+  color: red;
+}
+.c1{
+  text-align: left;
+  background-color: lightsalmon;
+}
+p.c1{
+  text-decoration:underline;
+}
+#id2{
+  background-color: lightblue;
+}
+h3.c2{
+  text-align: right;
+  font-size: 50px;
+}
+.c2{
+  background-color: chocolate;
+}
+.c1,.c2,h1{
+  text-transform:uppercase ;
+  border: 2px solid violet;
+} */
+h1 {
+  font-family: copperplate,Arial,fantasy;
+  font-size: 60px;
+  font-style: italic;
+  font-weight: 900;
+  text-transform: capitalize;
+  font-variant: small-caps;
+  text-align: center;
+  text-decoration: underline;
+}
+h3{
+  text-align: center;
+  border-color: red green blue;
+  border-width: 7px;
+  border-style: double dotted double;
+}
+/* p{
+  text-align: center;
+  border-color: red pink green blue;  
+  border-width: 7px;
+  border-style: solid dashed double dotted;
+} */
+p{  
+  border-top: 3px solid red;
+  border-left: 3px dotted greenyellow;
+  border-right: 7px dotted greenyellow;
+  border-bottom: 10px dotted greenyellow;
+  padding: 100px 650px;
+  width: 10px;
+  height: 200px;
+  box-sizing: content-box;
+}
