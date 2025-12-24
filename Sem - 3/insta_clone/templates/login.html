@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <script src="/static/js/validation.js" defer></script>
+</head>
+
+<body>
+    <div class="box">
+        <h2>Login</h2>
+        <form method="post" onsubmit="return validateLogin()">
+            <input type="email" name="email" id="loginEmail" placeholder="Email">
+            <input type="password" name="password" id="loginPassword" placeholder="Password">
+            <button type="submit">Log In</button>
+        </form>
+        <a href="/forgot">Forgot password?</a>
+        <p>Don't have an account? <a href="/register">Sign up</a></p>
+    </div>
+</body>
+
+</html>

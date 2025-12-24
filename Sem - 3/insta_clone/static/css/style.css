@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    background: white;
+    border: 1px solid #dbdbdb;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #3897f0;
+    border: none;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+a {
+    color: #3897f0;
+    text-decoration: none;
+    font-size: 14px;
+}

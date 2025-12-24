@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=10;
+        function my() {
+            let b = 20;
+            console.log(a+b);
+        }
+        console.log(a);
+        my();
+        function abc() {
+            let x=5;
+            if(x>2){
+                var y=1;
+                console.log(y);
+            }
+            console.log(y);
+        }
+        // console.log(z); // Error: x is not defined
+        let z=20;
+        // z=35;
+        abc();
+        // console.log(z);
+        // console.log(b); // Error: b is not defined
+
+        printMessage();
+
+        function printMessage() {
+            console.log("This works even if called 'before' the line it is defined on.");
+        }
+
+        console.log("Line 1");
+        console.log("Line 2");
+
+        setTimeout(() => {
+            console.log("Line 3 (Delayed)");
+        }, 0);
+
+        console.log("Line 4");
+        const q = 10;
+        function testConst() {
+            // q = 20; // Error: Assignment to constant variable.
+            // console.log(q);
+        }
+        testConst()
+        console.log(nu); // "245"
+        // console.log(number); // NaN
+    </script>
+</body>
+</html>

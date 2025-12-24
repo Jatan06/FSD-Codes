@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = {name:"abc",age:23}
+        console.log(a["name"]);
+        console.log(a["age"]);
+        var b = [{name:"abc",age:25},{name:"xyz",age:30,city:"amd"}];
+        console.log(b[1]["city"]);
+
+        var role = "admin";
+        // if (role === "admin") {
+        //     console.log("You have full access");
+        // } else if (role === "editor") {
+        //     console.log("You can edit content");
+        // } else if (role === "viewer") {
+        //     console.log("You have view only access");
+        // }
+        // else {
+        //     console.log("No access granted");
+        // }
+
+        switch (role) {
+            case "admin":
+                console.log("You have full access");
+                break;
+            case "editor":
+                console.log("You can edit content");
+                break;
+            case "viewer":
+                console.log("You have view only access");
+                break;
+            default:
+                console.log("No access granted");
+        }
+
+        let num = [10,15,20,25,30,35,40];
+        let filt = num.filter(n=> n>20);
+        console.log(filt);
+
+        let mapped = num.map(n=> n**n**n);
+        console.log(mapped);
+
+        let user = [{name:"abc",id:1},{name:"xyz",id:3},{name:"pqr",id:2}];
+        let u = user.find(u=> u.id===2);
+        console.log(u);
+    </script>
+</body>
+</html>
